@@ -1,143 +1,249 @@
-# 🎯 ApexPlanet Data Analytics Internship
+# 🎯 ApexPlanet Data Analytics Internship - 30 Days
 
-**Company:** ApexPlanet Software Pvt. Ltd.  
-**Program:** Data Analytics Internship (30 Days)  
-**Intern:** Anjali Tiwari  
+> **Complete Data Analytics Project**  
+> *30-Day Internship Program | ApexPlanet Software Pvt. Ltd.*
 
 ---
 
-## 📋 Project Structure
+## 📋 Project Overview
+
+This repository contains the complete solution for all **5 Tasks** of the ApexPlanet Data Analytics Internship. Each task builds upon the previous one, creating a comprehensive data analytics pipeline from raw data to final presentation.
+
+| Task | Topic | Status | Folder |
+|------|-------|--------|--------|
+| ✅ Task 1 | Foundational Setup & EDA | Complete | [`notebooks/task1_eda.ipynb`](notebooks/) |
+| ✅ Task 2 | SQL for Data Extraction | Complete | [`notebooks/task2_sql_integration.ipynb`](notebooks/) |
+| ⏳ Task 3 | Data Visualization & Dashboarding | Pending | [`dashboards/`](dashboards/) |
+| ⏳ Task 4 | Advanced Analytics (Basic) | Pending | [`notebooks/`](notebooks/) |
+| ⏳ Task 5 | Final Report & Presentation | Pending | [`reports/`](reports/) |
+
+---
+
+## 📁 Repository Structure
 
 ```
 apexplanet-data-analytics/
-├── data/                   # Raw and cleaned datasets
+│
+├── README.md                          ← This file
+├── requirements.txt                   ← All Python dependencies
+│
+├── data/                              ← Raw & cleaned datasets
 │   └── superstore_cleaned.csv
-├── notebooks/              # Jupyter notebooks for analysis
-│   └── Task1_EDA.ipynb
-├── scripts/                # Python utility scripts
-├── reports/                # Generated visualizations and reports
-│   ├── fig1_distributions.png
-│   ├── fig2_categorical_comparisons.png
-│   ├── fig3_correlation_heatmap.png
-│   ├── fig4_time_trends.png
-│   └── fig5_advanced_eda.png
-├── dashboards/             # Dashboard files (Power BI/Tableau)
-└── requirements.txt        # Python dependencies
+│
+├── notebooks/                           ← Jupyter notebooks (all tasks)
+│   ├── task1_eda.ipynb                ← Task 1: EDA & Data Cleaning
+│   └── task2_sql_integration.ipynb    ← Task 2: SQL + Python
+│
+├── scripts/                             ← SQL & Python scripts
+│   ├── task1_data_cleaning.py
+│   └── task2_queries.sql              ← Task 2: All SQL queries
+│
+├── database/                            ← SQLite database
+│   └── superstore.db
+│
+├── reports/                             ← Generated reports
+│   ├── task1_eda_report.pdf
+│   └── task2_sql_results.xlsx         ← Task 2: Excel export
+│
+├── dashboards/                          ← Dashboard files (Task 3)
+│   └── (coming soon)
+│
+└── images/                              ← All visualizations
+    ├── task1/                           ← Task 1 charts
+    │   ├── fig1_distributions.png
+    │   ├── fig2_categorical_comparisons.png
+    │   ├── fig3_correlation_heatmap.png
+    │   ├── fig4_time_trends.png
+    │   └── fig5_advanced_eda.png
+    │
+    └── task2/                           ← Task 2 charts
+        ├── q1_top_products.png
+        ├── q2_monthly_trend.png
+        ├── q3_customer_segmentation.png
+        ├── q4_regional_targets.png
+        ├── q5_profit_margin.png
+        ├── q6_discount_impact.png
+        ├── q7_shipping_efficiency.png
+        ├── q8_quarterly_performance.png
+        ├── q9_loss_orders.png
+        └── q10_yoy_growth.png
 ```
-
----
-
-## ✅ Task 1: Foundational Setup & Exploratory Data Analysis (EDA)
-
-**Timeline:** 6 Days  
-**Dataset:** Superstore Sales (2014-2017)
-
-### What was accomplished:
-
-| Step | Description | Status |
-|------|-------------|--------|
-| 1 | Environment Setup (Anaconda, Jupyter, Libraries) | ✅ |
-| 2 | Data Loading | ✅ |
-| 3 | Data Cleaning | ✅ |
-| 4 | Exploratory Data Analysis | ✅ |
-| 5 | Visualizations | ✅ |
-| 6 | Key Insights Documentation | ✅ |
-
-### Data Cleaning Steps:
-- ✅ Handled 201 missing postal codes (filled with state-wise median)
-- ✅ Removed 49 duplicate rows
-- ✅ Fixed data types (dates, categories)
-- ✅ Detected and capped outliers using IQR method
-- ✅ Added derived columns (Year, Month, Quarter, DayOfWeek, Shipping_Days)
-
-### 5 Key Insights:
-
-1. **Technology dominates** with $32.98M in total sales
-2. **Art has highest profit margin** (5.68%), Supplies lowest (3.18%)
-3. **South region leads** ($15.3M), Central trails ($14.1M)
-4. **Discounts hurt profit** - avg profit drops by $57 with discounts
-5. **November is peak month** - prepare for seasonal demand
-
-### Visualizations Generated:
-1. 📊 Distribution Analysis (Histograms & Boxplots)
-2. 📊 Categorical Comparisons (Bar Charts)
-3. 📊 Correlation Heatmaps
-4. 📊 Time Trends (Line Charts)
-5. 📊 Advanced EDA (Scatter, Profit Margin, Discount Impact)
 
 ---
 
 ## 🚀 Getting Started
 
-### Installation
+### Prerequisites
+- Python 3.8+
+- pip (Python package installer)
 
+### Installation
 ```bash
 # Clone the repository
-git clone https://github.com/YOUR_USERNAME/apexplanet-data-analytics.git
+git clone https://github.com/yourusername/apexplanet-data-analytics.git
 cd apexplanet-data-analytics
 
-# Create virtual environment
-python -m venv venv
-
-# Activate virtual environment
-# Windows:
-venv\Scripts\activate
-# Mac/Linux:
-source venv/bin/activate
-
-# Install dependencies
+# Install all dependencies
 pip install -r requirements.txt
-
-# Launch Jupyter Notebook
-jupyter notebook notebooks/Task1_EDA.ipynb
 ```
 
 ---
 
-## 📦 Dependencies
+## 📊 Task Summaries
 
-- pandas >= 1.5.0
-- numpy >= 1.21.0
-- matplotlib >= 3.5.0
-- seaborn >= 0.12.0
-- plotly >= 5.10.0
-- jupyter >= 1.0.0
-- openpyxl >= 3.0.10
+### ✅ Task 1: Foundational Setup & EDA
+**What we did:**
+- Set up Python environment with pandas, numpy, matplotlib, seaborn, plotly
+- Created synthetic Superstore Sales dataset (9,995 orders, 2014-2017)
+- Performed data cleaning: handled missing values, removed duplicates, fixed data types, capped outliers using IQR
+- Generated 5 key visualizations: distributions, categorical comparisons, correlation heatmap, time trends, advanced EDA
+- Documented 5 key business insights
 
----
+**Key Findings:**
+- Technology dominates with $32.98M in sales
+- Discounts reduce average profit by $57 per order
+- November is the peak sales month
+- South region leads with $15.3M in sales
 
-## 📊 Dataset Information
-
-- **Records:** 9,995 transactions
-- **Date Range:** January 2014 - December 2017
-- **Categories:** Furniture, Office Supplies, Technology
-- **Regions:** Central, East, South, West
-- **Segments:** Consumer, Corporate, Home Office
-
----
-
-## 📅 Upcoming Tasks
-
-| Task | Description | Timeline |
-|------|-------------|----------|
-| 2 | SQL for Data Extraction | 7 Days |
-| 3 | Data Visualization & Dashboarding | 7 Days |
-| 4 | Advanced Analytics (Basic) | 6 Days |
-| 5 | Final Report, Automation & Presentation | 4 Days |
+**Files:**
+- Notebook: [`notebooks/task1_eda.ipynb`](notebooks/task1_eda.ipynb)
+- Charts: [`images/task1/`](images/task1/)
 
 ---
 
-## 🔗 Links
+### ✅ Task 2: SQL for Data Extraction
+**What we did:**
+- Created SQLite database (`superstore.db`) from cleaned data
+- Mastered basic SQL: SELECT, WHERE, ORDER BY, GROUP BY, HAVING, JOIN
+- Learned advanced SQL: Subqueries, CTEs (WITH clause), Window Functions (ROW_NUMBER, RANK, LAG)
+- Integrated Python with SQL using `pandas.read_sql()`
+- Answered 10 real business questions with SQL + visualization
+- Created reusable database utility function
+- Exported all results to Excel
 
-- **Company:** [ApexPlanet Software Pvt. Ltd.](https://www.apexplanet.in)
-- **LinkedIn Post:** [Task 1 Complete](#)
+**10 Business Questions Answered:**
+1. Top 5 products by sales
+2. Monthly sales trend analysis
+3. Customer segmentation by spend
+4. Regional performance vs targets
+5. Profit margin by sub-category
+6. Discount impact on profitability
+7. Shipping mode efficiency
+8. Quarterly performance analysis
+9. Loss-making orders identification
+10. Year-over-year growth analysis
+
+**Files:**
+- Notebook: [`notebooks/task2_sql_integration.ipynb`](notebooks/task2_sql_integration.ipynb)
+- SQL Queries: [`scripts/task2_queries.sql`](scripts/task2_queries.sql)
+- Database: [`database/superstore.db`](database/superstore.db)
+- Excel Results: [`reports/task2_sql_results.xlsx`](reports/task2_sql_results.xlsx)
+- Charts: [`images/task2/`](images/task2/)
 
 ---
 
-## 📝 License
+### ⏳ Task 3: Data Visualization & Dashboarding (Coming Soon)
+- Create interactive dashboards with Power BI / Tableau
+- Build executive dashboard with 6-8 visuals
+- Publish and share dashboard link
 
-This project is created for educational purposes as part of the ApexPlanet Data Analytics Internship program.
+### ⏳ Task 4: Advanced Analytics (Coming Soon)
+- Statistical analysis and hypothesis testing
+- Customer segmentation with K-Means clustering
+- Basic predictive modeling (Linear/Logistic Regression)
+
+### ⏳ Task 5: Final Report & Presentation (Coming Soon)
+- Create 2-page executive summary PDF
+- Automate data pipeline with Python script
+- Final submission with all deliverables
 
 ---
 
-**Thank you for visiting! ⭐ Star this repo if you found it helpful.**
+## 🗃️ Database Schema
+
+### Table: `sales` (9,995 rows)
+| Column | Type | Description |
+|--------|------|-------------|
+| Order_ID | TEXT | Unique order identifier |
+| Order_Date | DATE | Date order was placed |
+| Ship_Date | DATE | Date order was shipped |
+| Ship_Mode | TEXT | Shipping method |
+| Customer_Name | TEXT | Customer name |
+| Segment | TEXT | Customer segment (Consumer/Corporate/Home Office) |
+| Country | TEXT | Country |
+| City | TEXT | City |
+| State | TEXT | State |
+| Postal_Code | INTEGER | ZIP code |
+| Region | TEXT | Sales region (West/East/Central/South) |
+| Product_ID | TEXT | Product identifier |
+| Category | TEXT | Product category (Furniture/Office Supplies/Technology) |
+| Sub_Category | TEXT | Product sub-category |
+| Product_Name | TEXT | Product name |
+| Sales | REAL | Sales amount |
+| Quantity | INTEGER | Units sold |
+| Discount | REAL | Discount percentage |
+| Profit | REAL | Profit amount |
+
+### Table: `region_managers` (Lookup table)
+| Column | Type | Description |
+|--------|------|-------------|
+| Region | TEXT | Sales region |
+| Manager | TEXT | Region manager name |
+| Target_Sales | REAL | Sales target |
+
+---
+
+## 🛠️ Technologies Used
+
+| Category | Tools |
+|----------|-------|
+| **Language** | Python 3.12 |
+| **Database** | SQLite (built-in) |
+| **Data Analysis** | pandas, numpy |
+| **Visualization** | matplotlib, seaborn, plotly |
+| **Notebook** | Jupyter |
+| **Excel Export** | openpyxl |
+| **Dashboard** | Power BI / Tableau (Task 3) |
+
+---
+
+## 📹 Video Demos
+
+| Task | LinkedIn Video |
+|------|----------------|
+| Task 1 | [Link to LinkedIn post] |
+| Task 2 | [Link to LinkedIn post] |
+| Task 3 | Coming soon |
+| Task 4 | Coming soon |
+| Task 5 | Coming soon |
+
+---
+
+## 📝 Key Learnings
+
+1. **Data Cleaning**: Handling missing values, duplicates, outliers, and data type conversions
+2. **Exploratory Data Analysis**: Statistical summaries, distributions, correlations, trends
+3. **SQL Fundamentals**: SELECT, WHERE, ORDER BY, GROUP BY, HAVING, JOIN
+4. **Advanced SQL**: Subqueries, CTEs, Window Functions for complex analysis
+5. **Python + SQL Integration**: Using pandas to bridge SQL extraction and Python analysis
+6. **Business Intelligence**: Translating raw data into actionable insights
+7. **Data Visualization**: Creating charts that tell a story
+
+---
+
+## 🤝 Connect With Me
+
+
+## 📄 License
+
+This project is part of the **ApexPlanet Software Pvt. Ltd.** Internship Program.
+
+---
+
+> **Internship Progress**: 2/5 Tasks Complete (40%)  
+> **Last Updated**: July 2026  
+> **Next Task**: Task 3 - Data Visualization & Dashboarding
+
+---
+
+*Made with ❤️ for ApexPlanet Data Analytics Internship*
