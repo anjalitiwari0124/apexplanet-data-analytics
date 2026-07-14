@@ -1,1 +1,1 @@
-
+#"Database folder for SQLite"
