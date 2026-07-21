@@ -1,0 +1,8 @@
+KPI,Value,Format
+Total Sales,59283030.769999996,Currency
+Total Profit,2878495.99,Currency
+Total Orders,9995.0,Number
+Unique Customers,799.0,Number
+Avg Order Value,5931.268711355678,Currency
+Profit Margin %,4.855514221544581,Percentage
+Avg Discount %,5.2521260630315165,Percentage
