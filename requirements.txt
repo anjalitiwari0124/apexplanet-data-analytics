@@ -20,3 +20,24 @@ openpyxl>=3.1.0
 # Jupyter notebook (if converting .py to .ipynb)
 # jupyter>=1.0.0
 # ipykernel>=6.0.0
+# Requirements for ApexPlanet Data Analytics Internship
+# Install all dependencies with: pip install -r requirements.txt
+
+# Data manipulation
+pandas>=1.5.0
+numpy>=1.24.0
+
+# Data visualization
+matplotlib>=3.7.0
+seaborn>=0.12.0
+plotly>=5.14.0
+
+# Database (SQLite is built into Python, no need to install)
+# sqlalchemy>=2.0.0  # Optional: for advanced database connections
+
+# Excel export
+openpyxl>=3.1.0
+
+# Jupyter notebook (if converting .py to .ipynb)
+# jupyter>=1.0.0
+# ipykernel>=6.0.0
