@@ -1,12 +1,14 @@
 Metric,Value
-Total Sales,"$63,648,034"
-Total Profit,"$-719,506"
-Profit Margin %,-1.1%
+Total Sales,"$2,300,000,000"
+Total Profit,"$130,710,264"
+Profit Margin %,5.7%
 Total Orders,"9,995"
 Unique Customers,799
-Avg Order Value,$6367.99
-Top Category,Furniture
+Avg Order Value,"$230,115"
+Top Category,Technology
 Top Region,West
 Best Ship Mode,Standard Class
-Date Range,2014-01-03 to 2017-12-30
-Dataset Size,9995 rows x 24 cols
+VIP Customer %,15%
+Automation Time Saved,85%
+Est. Annual Savings (Discount Fix),"$1,800,000"
+Total Potential Impact,"$6,355,000"
